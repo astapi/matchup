@@ -12,6 +12,7 @@ defmodule Matchup.Repo.Migrations.CreateLoungeFuture do
       add :started_at, :datetime
       add :end_at, :datetime
       add :comment, :string, size: 400
+      timestamps
     end
   end
 end

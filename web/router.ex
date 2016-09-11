@@ -18,6 +18,12 @@ defmodule Matchup.Router do
     pipe_through :api # Use the default browser stack
 
     get "/users", UsersController, :index
+    get "/users/:id", UsersController, :profile
+    post "/users", UsersController, :create
+    post "/users/update_game_profile", UsersController, :update_game_profile
+
+    get "/lounge_now", LoungeController, :now_index
+    post "/lounge_create_now", LoungeController, :create_now
   end
 
   # Other scopes may use custom stacks.

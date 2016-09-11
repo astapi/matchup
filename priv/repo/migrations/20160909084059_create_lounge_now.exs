@@ -10,6 +10,7 @@ defmodule Matchup.Repo.Migrations.CreateLoungeNow do
       add :rule, :integer
       add :pass, :string
       add :comment, :string, size: 400
+      timestamps
     end
   end
 end

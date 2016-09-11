@@ -3,6 +3,7 @@ defmodule Matchup.Repo.Migrations.CreateSf5Users do
 
   def change do
     create table(:sf5_users) do
+      add :user_id, :integer
       add :game_id, :string
       add :lp, :integer
       add :character, :string
